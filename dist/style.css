@@ -25,13 +25,76 @@ body {
   justify-content: center;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 :root {
   --gradient-yellow: hsl(6, 100%, 80%);
-  --gradient-Red: hsl(335, 100%, 65%);
+  --gradient-red: hsl(335, 100%, 65%);
   --pale-blue: hsl(243, 100%, 93%);
   --grayish-blue: hsl(229, 7%, 55%);
   --dark-blue: hsl(228, 56%, 26%);
   --very-dark-blue: hsl(229, 57%, 11%);
+}
+
+.right-section {
+  background-color: var(--dark-blue);
+  border-radius: 15px;
+  width: 34.5rem;
+  /* 540px */
+  height: 9.625rem;
+  /* 154px */
+  margin-top: 3.8rem;
+}
+.right-section .message {
+  color: var(--pale-blue);
+  font-weight: 400;
+}
+.right-section .message .highlight {
+  font-weight: 700;
+}
+.right-section .storage-bar {
+  /* position: relative;
+  background-color: var(--very-dark-blue);
+  border-radius: 15px;
+  height: 20px;
+  width: 90%;
+  margin-left: 1.5rem; */
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 20px;
+  background-color: var(--very-dark-blue);
+  border-radius: 20px;
+  margin-left: 1.5rem;
+}
+.right-section .storage-bar .storage-bar:after {
+  content: ".";
+  visibility: hidden;
+}
+.right-section .storage-bar .storage-used {
+  /* background-color: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 15px;
+  height: 20px;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.5rem; */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 81.5%;
+  height: inherit;
+  background-image: linear-gradient(to right, var(--gradient-yellow), var(--gradient-red));
+  border-radius: 20px;
+}
+.right-section .storage-bar .storage-used .storage-used:after {
+  content: ".";
+  visibility: hidden;
 }
 
 .left-section {
@@ -42,6 +105,7 @@ body {
   /* 368px */
   height: 13.5rem;
   /* 216px */
+  margin-right: 3rem;
 }
 .left-section .logo {
   margin: 2.5rem 0 2.5rem 2.5rem;
@@ -65,7 +129,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-duration: 0.4s;
+}
+.left-section .icons .icon-list li:hover {
+  background-color: #ffff;
+  cursor: pointer;
 }
 .left-section .icons .icon-list .item {
   padding: 1rem;
+}
+.left-section .icons .icon-list .item:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */

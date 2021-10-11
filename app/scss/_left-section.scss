@@ -4,6 +4,7 @@
     border-top-right-radius: 100px;
     width: 23rem; /* 368px */
     height: 13.5rem; /* 216px */
+    margin-right: 3rem;
 
     .logo {
         margin: 2.5rem 0 2.5rem 2.5rem;
@@ -28,10 +29,20 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition-duration: .4s;
+            }
+
+            li:hover {
+                background-color: #ffff;
+                cursor: pointer;
             }
     
             .item {
                 padding: 1rem;
+            }
+
+            .item:hover {
+                transform: scale(1.1);
             }
         }
     }
