@@ -1,0 +1,38 @@
+/* 1000px */
+@media only screen and (max-width: 62.5rem) {
+    body {
+        background-image: url(/images/bg-mobile.png);
+        background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		align-items: center;
+    }
+    
+    .container {
+        flex-direction: column;
+    } 
+    
+    .left-section {
+        margin-right: 0;
+        width: 20rem;
+    }
+
+    .right-section {
+        margin-top: 1.5rem;
+        width: 20rem;
+    }
+
+    .message {
+        margin: 0;   
+    }
+
+    .storage-bar {
+        width: 50%;
+        margin: 0;
+        margin-right: 1rem;
+    }
+
+    .storage-used {
+        width: 50%;
+    }
+}

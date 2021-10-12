@@ -14,9 +14,12 @@ body {
     background-color: var(--very-dark-blue);
 	background-image: url(/images/bg-desktop.png);
 	background-repeat: no-repeat;
-	background-position: bottom;
+    background-attachment: fixed;
+    background-position: left bottom;
+    background-size: contain;
 	overflow: hidden;
     font-family: 'Raleway', sans-serif;
+    color: var(--pale-blue);
     font-size: .875rem;
     font-weight: 400;
     line-height: 1.3;
